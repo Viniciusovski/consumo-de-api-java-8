@@ -11,9 +11,9 @@ public class ApiConsumer {
     public static void consumirApi() {
         try {
             // URL e credenciais
-            String apiUrl = "https://testeaovivo.wiremockapi.cloud/v2";
-            String username = "365ti";
-            String password = "testeaovivo";
+            String apiUrl = "https://urldaapi";
+            String username = "usuario";
+            String password = "senha";
 
             // Criar a conexão HTTP
             URL url = new URL(apiUrl);
@@ -33,7 +33,7 @@ public class ApiConsumer {
             connection.setDoOutput(true);
 
             // Escrever o body da requisição
-            String requestBody = "{\"cpf\":\"45652271850\"}";
+            String requestBody = "{\"campo\":\"valor\"}";
             try(OutputStream os = connection.getOutputStream()) {
                 byte[] input = requestBody.getBytes(StandardCharsets.UTF_8);
                 os.write(input, 0, input.length);
