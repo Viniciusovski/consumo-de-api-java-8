@@ -8,7 +8,7 @@ O método `consumirApi()` realiza as seguintes operações:
 
 - Faz uma requisição **POST** para a URL especificada
 - Usa **autenticação Basic** com as credenciais fornecidas
-- Envia o **body JSON** contendo o CPF
+- Envia o **body JSON** contendo o Campo
 - Imprime no console:
   - O **status HTTP** da resposta
   - O **body da resposta** como string JSON compacta
